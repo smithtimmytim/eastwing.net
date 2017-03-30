@@ -1,0 +1,49 @@
+// -------------------------------
+// HEADER
+// -------------------------------
+
+.header__navigation {
+  background-color: $third-color;
+  padding: 1rem 10%;
+  a {
+    color: desaturate(lighten($third-color, 40%), 40%);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: desaturate(lighten($third-color, 50%), 50%);
+    }
+  }
+}
+
+.header__masthead {
+  background-color: $primary-color;
+  padding: 2rem 10%;
+}
+
+.site__logo {
+  @media #{$medium-up} {
+    max-width: 55%;
+  }
+  .word__the {
+    animation: 800ms ease-out fadeUpAndIn;
+  }
+  .word__east {
+    animation: 800ms ease-out 500ms backwards fadeUpAndIn;
+  }
+  .word__wing {
+    animation: 800ms ease-out 800ms backwards fadeUpAndIn;
+  }
+  .host__name {
+    animation: 800ms ease-out 1s backwards fadeRightAndIn;
+    fill: lighten($primary-color, 25%);
+  }
+}
+
+.show__description {
+  animation: 1s ease-out 800ms backwards fadeRightAndIn;
+  color: lightgoldenrodyellow;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-top: 2rem;
+  text-align: right;
+}

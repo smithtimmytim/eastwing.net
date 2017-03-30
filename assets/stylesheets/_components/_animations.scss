@@ -1,0 +1,25 @@
+// -------------------------------
+// ANIMATIONS
+// -------------------------------
+
+@keyframes fadeUpAndIn {
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeRightAndIn {
+  from {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

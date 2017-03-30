@@ -1,0 +1,20 @@
+<head>
+  <!--
+  Made with love in beautiful Saint Paul, Minnesota.
+  © 2008–{{ site.time | date: "%Y" }} Timothy B. Smith.
+  -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{% if page.title %}{{ page.title }} |{% endif %} The East Wing {% if page.url == '/' %} is a show about the web and those who create it.{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta name="keywords" content="tim smith, timothy b smith, the east wing, podcasts, web design podcast, web design, ux design">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- Twitter Info -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@smithtimmytim">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/stylesheets/global.css">
+</head>

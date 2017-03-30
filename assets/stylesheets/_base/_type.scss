@@ -37,8 +37,18 @@ html {
 }
 
 body {
+  color: $text-color;
   font-family: $serif;
   -webkit-hyphens: auto;
   hyphens: auto;
   line-height: 1.2;
+}
+
+// -------------------------------
+// Text
+// -------------------------------
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.35;
 }

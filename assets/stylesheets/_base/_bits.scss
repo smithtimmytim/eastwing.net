@@ -6,6 +6,7 @@ $secondary-color: #FF9B4F;
 $third-color: #1E0921;
 $black: #393E41;
 $text-color: #555;
+$heading-color: #333;
 
 // -------------------------------
 // Fonts
@@ -25,3 +26,20 @@ $large-up: 'screen and (min-width: 64em)';
 $xlarge-up: 'screen and (min-width: 90.063em)';
 $xlarge-only: 'screen and (min-width: 90.063em) and (max-width: 120em)';
 $xxlarge-up: 'screen and (min-width: 120.063em)';
+
+// -------------------------------
+// Clearfix
+// -------------------------------
+// Why do I still need this?
+// -------------------------------
+
+%clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

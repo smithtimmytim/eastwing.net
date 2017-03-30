@@ -1,5 +1,29 @@
 ---
 layout: default
+css_class: home
 ---
 
-Hello World.
+<div class="entries-list">
+  {% for post in site.posts %}
+    <article class="entry {% if forloop.first %}entry--embiggen{% endif %}">
+      {% if forloop.first %}
+        <figure class="entry__picture">
+          <img src="/uploads/guests/{{ post.picture }}.jpg" alt="Picture for {{ post.title }}">
+        </figure>
+      {% endif %}
+      <header class="entry__header">
+        <span class="entry-header__number">#{{ post.number }}</span>
+        <h2 class="entry-header__title"><a href="{{ post.url }}" title="Permalink to {{ post.title }}">{{ post.title }}</a></h2>
+        <small class="entry-header__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%a, %b %d, %Y" }}</time></small>
+      </header>
+      {% if forloop.first %}
+        <audio id="main-audio" controls="controls" preload width="100%">
+          <source src="https://audio.simplecast.com/64453.mp3" type="audio/mpeg" />
+        </audio>
+      {% endif %}
+      <div class="entry__content">
+        {{ post.excerpt }}
+      </div>
+    </article>
+  {% endfor %}
+</div>

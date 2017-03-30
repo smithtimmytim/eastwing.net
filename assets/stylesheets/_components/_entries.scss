@@ -1,0 +1,85 @@
+// -------------------------------
+// ENTRIES
+// -------------------------------
+
+.entries-list > *:not(.entry--embiggen) {
+  padding-left: 42%;
+  padding-right: 10%;
+}
+
+.entries-list > * {
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.entry--single,
+.entry--embiggen {
+  .entry-header__title {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  .entry-header__meta {
+    font-size: 1.2rem;
+  }
+}
+
+.entry--embiggen {
+  @extend %clearfix;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  .entry-header__title {
+    a {
+      color: $heading-color;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: $primary-color;
+      }
+    }
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.35;
+  }
+  .entry__content {
+    float: left;
+    width: calc(100% - 25% - 2rem);
+  }
+  audio {
+    width: calc(100% - 25% - 2rem);
+  }
+}
+
+.entry__picture {
+  float: left;
+  margin-right: 2rem;
+  width: 25%;
+}
+
+.entry-header__title {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 1rem;
+  vertical-align: middle;
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+.entry-header__meta {
+  color: #AAA;
+  display: block;
+  font-size: 1.05rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.entry-header__number {
+  color: #AAA;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}

@@ -12,3 +12,6 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed

@@ -4,12 +4,13 @@ css_class: home
 ---
 
 <div class="entries-list">
-  {% for post in site.posts %}
+  {% for post in site.posts limit: 4 %}
     <article class="entry {% if forloop.first %}entry--embiggen{% endif %}">
       {% if forloop.first %}
         <figure class="entry__picture">
           <img src="/uploads/guests/{{ post.picture }}.jpg" alt="Picture for {{ post.title }}">
         </figure>
+      <div class="entry-text__wrapper">
       {% endif %}
       <header class="entry__header">
         <span class="entry-header__number">#{{ post.number }}</span>
@@ -24,6 +25,8 @@ css_class: home
       <div class="entry__content">
         {{ post.excerpt }}
       </div>
+      {% if forloop.first%}</div>{% endif %}
     </article>
   {% endfor %}
+  <p class="entry__more-episodes"><a href="#">More Episodes &rarr;</a></p>
 </div>

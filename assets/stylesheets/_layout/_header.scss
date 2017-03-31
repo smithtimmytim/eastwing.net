@@ -1,10 +1,14 @@
 // -------------------------------
 // HEADER
 // -------------------------------
+.header {
+  margin-bottom: 2rem;
+}
 
 .header__navigation {
   background-color: $third-color;
-  padding: 1rem 10%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   a {
     color: desaturate(lighten($third-color, 40%), 40%);
     text-decoration: none;
@@ -13,11 +17,15 @@
       color: desaturate(lighten($third-color, 50%), 50%);
     }
   }
+  ul li + li {
+    margin-top: 0;
+  }
 }
 
 .header__masthead {
   background-color: $primary-color;
-  padding: 2rem 10%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .site__logo {

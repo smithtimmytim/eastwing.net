@@ -45,7 +45,7 @@ the styles.
 // themselves.
 // -------------------------------
 @import '_layout/header';
-// @import '_layout/maincontent';
-// @import '_layout/pages';
+@import '_layout/maincontent';
+@import '_layout/pages';
 // @import '_layout/sidebar';
 // @import '_layout/footer';

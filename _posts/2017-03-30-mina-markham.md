@@ -1,5 +1,5 @@
 ---
-title: Mina Markham
+title: Questlove Can't Take a Compliment
 number: '001'
 date: 2017-03-30 13:55
 picture: mina-markham

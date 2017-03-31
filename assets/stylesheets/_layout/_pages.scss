@@ -1,0 +1,20 @@
+// -------------------------------
+// PAGES
+// -------------------------------
+
+.page__header {
+  display: grid;
+  grid-gap: 2rem;
+  margin-bottom: 1.5rem;
+  @media #{$medium-up} {
+    grid-template-columns: 1fr minmax(40ch, 55ch);
+  }
+}
+
+.page-header__title {
+  font-size: 3rem;
+  font-weight: 300;
+  @media #{$medium-up} {
+    grid-column: 2;
+  }
+}

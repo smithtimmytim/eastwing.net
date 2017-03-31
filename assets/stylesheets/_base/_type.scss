@@ -37,8 +37,67 @@ html {
 }
 
 body {
+  color: $text-color;
   font-family: $serif;
   -webkit-hyphens: auto;
   hyphens: auto;
   line-height: 1.2;
+}
+
+// -------------------------------
+// Text
+// -------------------------------
+
+h1,
+h2,
+h3 {
+  color: $heading-color;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.entry__content,
+.page__content {
+  > * + * {
+    margin-top: 1.1rem;
+  }
+}
+
+ul {
+  li {
+    font-size: .9rem;
+    + li {
+      margin-top: .5rem;
+    }
+  }
+}
+
+// -------------------------------
+// Hr
+// -------------------------------
+
+hr {
+  border: solid #EEE;
+  border-width: 1px 0 0;
+  margin: 1.2rem 0;
+}
+
+// -------------------------------
+// Links
+// -------------------------------
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: lighten($primary-color, 5%);
+  }
 }

@@ -2,6 +2,13 @@
 // MAIN CONTENT
 // -------------------------------
 
+.main-content__wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
 .main {
-  margin-bottom: 2rem;
+  background-color: white;
+  box-shadow: 10px 0 0 rgba(black, .1);
+  padding: 2rem;
 }

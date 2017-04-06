@@ -2,14 +2,7 @@
 // BASE
 // -------------------------------
 
-.main,
-.header__navigation,
-.header__masthead,
-.footer {
-  padding-left: 5%;
-  padding-right: 5%;
-  @media #{$medium-up} {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+body {
+  background-color: $primary-color;
+  padding-right: 1rem;
 }

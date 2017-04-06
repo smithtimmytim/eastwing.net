@@ -1,0 +1,47 @@
+// -------------------------------
+// SIDEBAR
+// -------------------------------
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.site__logo {
+  fill: white;
+  .word__the {
+    animation: 800ms ease-out fadeUpAndIn;
+  }
+  .word__east {
+    animation: 800ms ease-out 500ms backwards fadeUpAndIn;
+  }
+  .word__wing {
+    animation: 800ms ease-out 800ms backwards fadeUpAndIn;
+  }
+  .host__name {
+    animation: 800ms ease-out 1s backwards fadeRightAndIn;
+    fill: lighten($primary-color, 25%);
+  }
+}
+
+.sidebar__logo {
+  padding: 1.5rem 1rem;
+}
+
+.sidebar__content {
+  background-color: $black;
+  flex: 1 1 auto;
+  padding: 1.5rem 1rem;
+}
+
+.show__description {
+  color: lightgoldenrodyellow;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.show__host {
+  color: lighten($black, 50%);
+  font-style: italic;
+}

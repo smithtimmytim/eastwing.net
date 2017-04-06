@@ -1,0 +1,60 @@
+// -------------------------------
+// FOOTER
+// -------------------------------
+
+.footer {
+  background-color: $black;
+  border-top: 2px solid lighten($black, 8%);
+  display: grid;
+  grid-template-areas: 'about'
+  'links'
+  'sub';
+  @media #{$medium-up} {
+    grid-template-areas: 'about links'
+    'sub sub';
+    grid-template-columns: 3fr 1fr;
+  }
+  h4 {
+    color: white;
+    font-family: $sans;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  p {
+    color: lighten($black, 40%);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+.about__host {
+  grid-area: about;
+  padding: 2rem;
+}
+
+.site__links {
+  font-family: $sans;
+  grid-area: links;
+  padding: 2rem 1rem;
+  li {
+    color: lighten($black, 40%);
+    font-size: .8rem;
+    line-height: .9;
+  }
+}
+
+.sub-footer {
+  border-top: 2px solid lighten($black, 8%);
+  grid-area: sub;
+  padding: 1rem 2rem;
+}
+
+.copyright {
+  color: lighten($black, 25%);
+  font-family: $sans;
+  font-size: .7rem;
+}

@@ -11,9 +11,8 @@ title: All Episodes
 {% for post in site.posts %}
   <article class="entry">
     <header class="entry__header">
-      <span class="entry-header__number">#{{ post.number }}</span>
+      <small class="entry-header__meta"><span class="entry-header__number">#{{ post.number }}</span> &middot; <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%a, %b %d, %Y" }}</time></small>
       <h2 class="entry-header__title"><a href="{{ post.url }}" title="Permalink to {{ post.title }}">{{ post.title }}</a></h2>
-      <small class="entry-header__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%a, %b %d, %Y" }}</time></small>
     </header>
 
     <div class="entry__content">

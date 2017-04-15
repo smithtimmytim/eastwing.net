@@ -4,22 +4,22 @@ css_class: single
 ---
 
 <article class="entry entry--single">
+  <div class="entry-text__wrapper">
+    <header class="entry__header">
+      <small class="entry-header__meta"><span class="entry-header__number">#{{ page.number }}</span> &middot; <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a, %b %d, %Y" }}</time></small>
+      <h1 class="entry-header__title">{{ page.title }}</h1>
+    </header>
+
+    <audio id="main-audio" controls="controls" preload width="100%">
+      <source src="https://audio.simplecast.com/64453.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="entry__content">
+      {{ page.content }}
+    </div>
+  </div>
+
   <figure class="entry__picture">
     <img src="/uploads/guests/{{ page.picture }}.jpg" alt="Picture for {{ page.title }}">
   </figure>
-<div class="entry-text__wrapper">
-  <header class="entry__header">
-    <span class="entry-header__number">#{{ page.number }}</span>
-    <h1 class="entry-header__title">{{ page.title }}</h1>
-    <small class="entry-header__meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a, %b %d, %Y" }}</time></small>
-  </header>
-
-  <audio id="main-audio" controls="controls" preload width="100%">
-    <source src="https://audio.simplecast.com/64453.mp3" type="audio/mpeg" />
-  </audio>
-
-  <div class="entry__content">
-    {{ page.content }}
-  </div>
-</div>
 </article>

@@ -6,7 +6,7 @@
   display: grid;
   grid-gap: 2rem;
   @media #{$medium-up} {
-    grid-template-columns: 1fr minmax(40ch, 55ch);
+    grid-template-columns: minmax(40ch, 55ch) 1fr;
   }
 }
 
@@ -15,39 +15,34 @@
   display: grid;
   grid-gap: 2rem;
   @media #{$medium-up} {
-    grid-template-columns: 1fr minmax(40ch, 45ch);
+    grid-template-columns: minmax(40ch, 45ch) 1fr;
   }
   @media #{$large-up} {
-    grid-template-columns: 1fr minmax(40ch, 65ch);
+    grid-template-columns: minmax(40ch, 58ch) 1fr;
   }
   .entry__picture {
     @media #{$medium-up} {
-      grid-column: 1;
+      grid-column: 2;
     }
   }
   .entry-text__wrapper {
     @media #{$medium-up} {
-      grid-column: 2;
+      grid-column: 1;
     }
   }
   .entry-header__title {
     font-size: 3rem;
     font-weight: 300;
   }
-  .entry-header__meta {
-    font-size: 1.2rem;
-  }
 }
 
 .entry {
   @media #{$medium-up} {
-    grid-column: 2;
+    grid-column: 1;
   }
 }
 
 .entry--embiggen {
-  @extend %clearfix;
-
   grid-column: 1 / -1;
   .entry-header__title {
     a {
@@ -82,22 +77,14 @@
 .entry-header__meta {
   color: #AAA;
   display: block;
-  font-size: 1.05rem;
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.entry-header__number {
-  color: #AAA;
-  font-size: 1.2rem;
-  margin-right: 1rem;
-  vertical-align: middle;
+  font-family: $sans;
+  font-size: .8rem;
 }
 
 .entry__more-episodes {
   font-size: 1rem;
   @media #{$medium-up} {
-    grid-column: 2;
+    grid-column: 1;
   }
   a {
     text-decoration: none;
